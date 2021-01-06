@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/write/write",
+    "pages/login/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab/follow.png",
+        "selectedIconPath": "static/tab/follow-selected.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/write/write",
+        "iconPath": "static/tab/write.png",
+        "selectedIconPath": "static/tab/write-selected.png",
+        "text": "写作"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/tab/me.png",
+        "selectedIconPath": "static/tab/me-selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap0.json"
+}
