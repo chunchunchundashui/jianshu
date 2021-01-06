@@ -1,0 +1,35 @@
+[2021-01-06T22:16:33+08:00][sql] CONNECT:[ UseTime:0.156063s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:16:33+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.143220s ]
+[2021-01-06T22:16:33+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'undefined' LIMIT 1 [ RunTime:0.018038s ]
+[2021-01-06T22:16:33+08:00][sql] INSERT INTO `js_member` SET `openid` = 'undefined' , `uname` = 'undefined' , `face` = 'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJPHB8m2buWP7rs35zWoUKB1nNCpPWKa6F5VqJqrHv9PRsQhnohnLIXkvCvs23wWFibzk6gxibpzJ2w/132' , `random` = '5ff5c641003b8' , `regtime` = 1609942593 [ RunTime:0.085478s ]
+[2021-01-06T22:17:06+08:00][sql] CONNECT:[ UseTime:0.001792s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:17:06+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001481s ]
+[2021-01-06T22:17:06+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'undefined' LIMIT 1 [ RunTime:0.000713s ]
+[2021-01-06T22:18:52+08:00][sql] CONNECT:[ UseTime:0.001174s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:18:52+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001495s ]
+[2021-01-06T22:18:52+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'undefined' LIMIT 1 [ RunTime:0.000566s ]
+[2021-01-06T22:19:38+08:00][sql] CONNECT:[ UseTime:0.002823s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:19:38+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.002070s ]
+[2021-01-06T22:19:38+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'undefined' LIMIT 1 [ RunTime:0.000447s ]
+[2021-01-06T22:21:31+08:00][sql] CONNECT:[ UseTime:0.001019s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:21:31+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001402s ]
+[2021-01-06T22:21:31+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'undefined' LIMIT 1 [ RunTime:0.000525s ]
+[2021-01-06T22:28:11+08:00][sql] CONNECT:[ UseTime:0.001932s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:28:11+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001633s ]
+[2021-01-06T22:28:11+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'ogGP74nTQRViaejdM71nhyWFxQFU' LIMIT 1 [ RunTime:0.000499s ]
+[2021-01-06T22:28:11+08:00][sql] INSERT INTO `js_member` SET `openid` = 'ogGP74nTQRViaejdM71nhyWFxQFU' , `uname` = '长春' , `face` = 'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJPHB8m2buWP7rs35zWoUKB1nNCpPWKa6F5VqJqrHv9PRsQhnohnLIXkvCvs23wWFibzk6gxibpzJ2w/132' , `random` = '5ff5c8fb989ad' , `regtime` = 1609943291 [ RunTime:0.000745s ]
+[2021-01-06T22:29:56+08:00][sql] CONNECT:[ UseTime:0.001723s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:29:56+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001273s ]
+[2021-01-06T22:29:56+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'ogGP74nTQRViaejdM71nhyWFxQFU' LIMIT 1 [ RunTime:0.000657s ]
+[2021-01-06T22:31:15+08:00][sql] CONNECT:[ UseTime:0.009718s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:31:15+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001013s ]
+[2021-01-06T22:31:15+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'ogGP74nTQRViaejdM71nhyWFxQFU' LIMIT 1 [ RunTime:0.000636s ]
+[2021-01-06T22:31:41+08:00][sql] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:31:41+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.000985s ]
+[2021-01-06T22:31:41+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'ogGP74nTQRViaejdM71nhyWFxQFU' LIMIT 1 [ RunTime:0.000594s ]
+[2021-01-06T22:32:38+08:00][sql] CONNECT:[ UseTime:0.000954s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:32:38+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001010s ]
+[2021-01-06T22:32:38+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'ogGP74nTQRViaejdM71nhyWFxQFU' LIMIT 1 [ RunTime:0.000567s ]
+[2021-01-06T22:34:19+08:00][sql] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;port=3306;dbname=jianshu;charset=utf8mb4
+[2021-01-06T22:34:19+08:00][sql] SHOW FULL COLUMNS FROM `js_member` [ RunTime:0.001638s ]
+[2021-01-06T22:34:19+08:00][sql] SELECT * FROM `js_member` WHERE  `openid` = 'ogGP74nTQRViaejdM71nhyWFxQFU' LIMIT 1 [ RunTime:0.000587s ]
