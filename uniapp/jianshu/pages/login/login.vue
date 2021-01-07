@@ -9,6 +9,7 @@
 </template>
 
 <script>
+	var sign = require('../../common/sign.js');
 	var _self, _options, openid, session_key;
 	export default {
 		data() {
@@ -17,6 +18,7 @@
 			}
 		},
 		onLoad(options) {
+			sign.sign(this.apiServer);
 			_self = this;
 			_options = options;
 			// 判断小程序登陆,  小程序登陆必须先获取code在用code从微信服务器上面获取用户的openid,  小程序登陆第一步
@@ -47,6 +49,7 @@
 					// 获取用户信息
 					    uni.getUserInfo({
 					      provider: 'weixin',
+						  var sign = uni.getStorageSync('sign');
 					      success: function (infoRes) {
 					        uni.request({
 					            url: _self.apiServer+'member/login', //封装地址
@@ -54,6 +57,7 @@
 					                openId: infoRes.userInfo.openId,
 									nickname: infoRes.userInfo.nickname,
 									avatarUrl: infoRes.userInfo.avatarUrl,
+									sign: sign
 					            },
 								method: 'POST',
 					            header: {
@@ -100,12 +104,14 @@
 			// 小程序登陆第三步
 			getUserInfo(userInfo) {
 				var _user = userInfo.detail.userInfo;
+				var sign = uni.getStorageSync('sign');
 				uni.request({
 				    url: _self.apiServer+'member/login', //封装地址
 				    data: {
 				        openId: openid,
 						nickname: _user.nickName,
 						avatarUrl: _user.avatarUrl,
+						sign: sign
 				    },
 					method: 'POST',
 				    header: {

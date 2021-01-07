@@ -7,11 +7,25 @@ use app\Request;
 
 class Member extends BaseController
 {
+    /**
+     * app微信登陆,  小程序登陆,  验证签名
+     * @param Request $request
+     * @return \think\response\Json
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
     public function login(Request $request)
     {
         $params = getParams($request, [
-            'openId', 'nickname', 'avatarUrl'
+            'openId', 'nickname', 'avatarUrl', 'sign'
         ], 'post');
+        //登陆前签名验证
+        $checkRes = $this->checkSign();
+        if ($checkRes['code'] == 'error') {
+            return json($checkRes);
+        }
+        //登陆前签名验证结束
         $userInfo = \app\api\model\Member::where('openid', $params['openId'])->find();
         if (empty($userInfo)) { //  用户的openid不存在就注册
             $userInfo['openid'] = $params['openId'];
@@ -29,6 +43,10 @@ class Member extends BaseController
         }
     }
 
+    /**
+     * 像微信服务端发送请求获取openid
+     * @return \think\response\Json
+     */
     public function getOpenId()
     {
         $appid = "wxc7926f1289e89eda";
