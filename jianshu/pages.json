@@ -1,0 +1,75 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	    ,{
+            "path" : "pages/me/me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/write/write",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+	        "color": "#7A7E83",
+	        "selectedColor": "#3cc51f",
+	        "borderStyle": "black",
+	        "backgroundColor": "#ffffff",
+	        "height": "50px",
+	        "fontSize": "10px",
+	        "iconWidth": "24px",
+	        "spacing": "3px",
+	        "list": [{
+	            "pagePath": "pages/index/index",
+	            "iconPath": "static/tab/follow.png",
+	            "selectedIconPath": "static/tab/follow-selected.png",
+	            "text": "主页"
+	        }, {
+	            "pagePath": "pages/write/write",
+	            "iconPath": "static/tab/write.png",
+	            "selectedIconPath": "static/tab/write-selected.png",
+	            "text": "写作"
+	        }, {
+	            "pagePath": "pages/me/me",
+	            "iconPath": "static/tab/me.png",
+	            "selectedIconPath": "static/tab/me-selected.png",
+	            "text": "我的"
+	        }]
+	    },
+	  "easycom": {
+	    "autoscan": true, //是否自动扫描组件
+	    "custom": {//自定义扫描规则
+	      "^uni-(.*)": "@/components/uni-$1.vue"
+	    }
+	  },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
